@@ -1,0 +1,23 @@
+<!--The Menu Resource (res/menu/main_menu.xml)-->
+
+    <?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_languages"
+        android:title="Select Language">
+
+        <menu>
+            <item
+                android:id="@+id/sub_english"
+                android:title="English" />
+            <item
+                android:id="@+id/sub_hindi"
+                android:title="Hindi" />
+            <item
+                android:id="@+id/sub_marathi"
+                android:title="Marathi" />
+        </menu>
+    </item>
+
+</menu>

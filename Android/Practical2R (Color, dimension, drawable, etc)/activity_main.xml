@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pebbles">
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Demo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="openColorActivity"/>
+    <Button
+        android:id="@+id/btnTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme Demo"
+        android:layout_below="@id/btnColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openThemeActivity"/>
+    <Button
+        android:id="@+id/btnString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String Demo"
+        android:layout_below="@id/btnTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openStringActivity"/>
+
+
+    <Button
+        android:id="@+id/btnDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawable Demo"
+        android:layout_below="@id/btnString"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openDrawableActivity"/>
+    <Button
+        android:id="@+id/btnDimension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dimension Demo"
+        android:layout_below="@id/btnDrawable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="openDimensionActivity"/>
+</RelativeLayout>

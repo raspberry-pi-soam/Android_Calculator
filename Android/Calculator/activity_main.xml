@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#EEEEEE"
+        android:gravity="bottom|end"
+        android:padding="50dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="48sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignMargins">
+
+        <Button android:id="@+id/btnDel" android:text="DEL" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnMod" android:text="%" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnAdd" android:text="+" style="@style/CalcBtn"/>
+
+        <Button android:text="1" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="2" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="3" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnDiv" android:text="/" style="@style/CalcBtn"/>
+
+        <Button android:text="4" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="5" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="6" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnSub" android:text="-" style="@style/CalcBtn"/>
+
+        <Button android:text="7" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="8" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="9" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:id="@+id/btnMul" android:text="X" style="@style/CalcBtn"/>
+
+        <Button android:text="." android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button android:text="0" android:onClick="onDigitClick" style="@style/CalcBtn"/>
+        <Button
+            android:id="@+id/btnEqual"
+            android:text="="
+            style="@style/CalcBtn"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"/>
+
+    </GridLayout>
+
+</LinearLayout>

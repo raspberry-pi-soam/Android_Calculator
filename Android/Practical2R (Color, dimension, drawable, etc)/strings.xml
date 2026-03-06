@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practical 2R</string>
+    <string name="button_name">Click on me</string>
+    <string name="ParaHead">Welcome to Practical 2R</string>
+    <string name="Description">This is a string resource demo.</string>
+    <string name="Welcome_Message">Welcome to Android Studio. This is your Practical 2 Resources.</string>
+</resources>
